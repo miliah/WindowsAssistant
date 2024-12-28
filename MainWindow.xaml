@@ -1,0 +1,21 @@
+﻿<Window x:Class="WindowsAssistant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Windows Assistant" Height="400" Width="334" Background="White">
+    <Grid Margin="0,0,10,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg" Opacity="0.3"/>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Width="304" Height="352">
+            <TextBlock x:Name="IPAddressText" Text="آی‌پی محلی: --" FontSize="18" FontWeight="Bold" Foreground="Black" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <TextBlock x:Name="InternetStatusText" Text="وضعیت اینترنت: --" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <TextBlock x:Name="UptimeText" Text="مدت روشن بودن سیستم: --" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin" Width="292"/>
+            <TextBlock x:Name="CPUUsageText" Text="بار سی‌پی‌یو: --%" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <TextBlock x:Name="RAMUsageText" Text="بار RAM: --MB" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <TextBlock x:Name="DateTimeText" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <TextBlock x:Name="ClockText" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,10" FontFamily="B Nazanin"/>
+            <Button Content="ماشین حساب" Click="OpenCalculator_Click" FontSize="16" Width="150"/>
+        </StackPanel>
+    </Grid>
+</Window>
